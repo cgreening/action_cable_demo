@@ -5,7 +5,7 @@ test:
   adapter: async
 
 production:
-  adapter: postgresql
-  # adapter: redis
-  # url: <%= ENV['REDIS_URL'] %>  
-  # channel_prefix: <%= ENV['CABLE_CHANNEL_PREFIX'] %>
+  # adapter: postgresql
+  adapter: redis
+  url: <%= ENV['REDIS_URL'] %>  
+  channel_prefix: <%= ENV['CABLE_CHANNEL_PREFIX'] %>
